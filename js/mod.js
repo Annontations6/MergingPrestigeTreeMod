@@ -4,10 +4,10 @@ let modInfo = {
 	author: "Despacit2p0",
 	pointsName: "points",
 	discordName: "APTMAM Discord",
-	discordLink: "https://discord.gg/Uy7Y6VTdCR",
+	discordLink: "https://raw.githack.com/Annontations6/other-prestige-trees/7ced947a1b8cfc3c3bc5d3d57a35bfe855868269/index.html",
 	initialStartPoints: new Decimal (0), // Used for hard resets and new players
 	
-	offlineLimit: new Decimal(0)
+	offlineLimit: new Decimal(6)
 }
 
 // Set your version in num and name
@@ -152,7 +152,7 @@ var displayThings = [
 
 // Determines when the game "ends"
 function isEndgame() {
-	return player.points.gte(new Decimal("e280000000"))
+	return player.points.gte(new Decimal("e2800000000000000000000000000000000"))
 }
 
 
@@ -161,7 +161,7 @@ function isEndgame() {
 
 // You can change this if you have things that can be messed up by long tick lengths
 function maxTickLength() {
-	return(3600) // Default is 1 hour which is just arbitrarily large
+	return(36000) // Default is 1 hour which is just arbitrarily large
 }
 
 // Use this if you need to undo inflation from an older version. If the version is older than the version that fixed the issue,
